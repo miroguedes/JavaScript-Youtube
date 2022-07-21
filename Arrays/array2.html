@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    var mochila=[];
+
+    mochila.push("faca");
+    mochila.push("corda");
+    mochila.push("pederneira");
+    mochila.push("chave");
+    mochila.push("lanterna");
+    mochila.unshift("pedra"); //unshift insere item no início do array
+
+    mochila.splice(2,1); //elimina elementos do meio do array
+    //( , ) primeiro indica a partir d qual item quer apagar e depois a quantidade de elementos
+
+    mochila.pop(); //pop remove o último item do array
+
+    mochila.shift(); //remove o primeiro item da lista
+
+    document.write([mochila[0]]+"<br>");
+    document.write([mochila[1]]+"<br>");
+    document.write([mochila[2]]+"<br>");
+    document.write([mochila[3]]+"<br>");
+    document.write([mochila[4]]+"<br>");
+    document.write([mochila[5]]+"<br>");
+    
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
