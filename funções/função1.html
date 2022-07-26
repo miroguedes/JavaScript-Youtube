@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        var numeros=new Array(10,2,5,30,25,19,20,50,40,150); //cria um array com o nome "numeros"
+
+        function media(nums){
+            var tam=nums.length; //descobrir o tamanho do array
+            var soma=0; // cria a variavel "soma"
+            for(var i=0;i<tam;i++){ //faz o incremento de "soma"
+                soma+=nums[i]; //"soma" recebe o seu próprio valor + o 
+            }
+            return Math.round(soma/tam); //arredonda "soma/tam"
+        }
+        document.write(media(numeros)); //escreve o resultado da média da array "numeros    "
+        
+        
+        
+        
+        
+        /*
+        function soma(n1,n2){
+            return res=n1+n2;
+        }
+        var res=soma(7,7)
+        document.write(res);
+        */
+        
+
+
+
+        /*function soma(n1,n2){
+            var res=n1+n2;
+            document.write(res+"<br>");
+        }        
+        soma(5,2);
+        soma(5,5);
+        soma(5,27);*/
+
+
+        /*function escreve(){
+            document.write("curso de jv");
+
+        }
+
+        escreve();*/
+
+    </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
