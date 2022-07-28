@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #rel{
+            text-align: center;
+            color: #0f0;
+            font-weight: bold;
+            font-size: 30px;
+            width: 130px;
+            background-color: #000;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.274);
+            border-radius: 8px;
+
+
+        }
+
+
+    </style>
+
+    <script>
+
+        function relogio(){
+            var data=new Date();
+            var hor=data.getHours();
+            var min=data.getMinutes();
+            var seg=data.getSeconds();
+
+            if(hor<10){
+                hor="0"+hor;
+            }
+
+            if(min<10){
+                min="0"+min;
+            }
+
+            if(seg<10){
+                seg="0"+seg;
+            }
+
+            var horas=hor+":"+min+":"+seg;
+            document.getElementById("rel").value=horas; //recebe value pq é um imput text
+        }
+
+        var tempo=setInterval(relogio,1000);
+
+
+
+    </script>
+
+
+</head>
+<body>
+    <input type="text" id="rel">
+    
+</body>
+</html>
